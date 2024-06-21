@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>អនុវិទ្យាល័យសាមគ្គី</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Emblem_of_the_Ministry_of_Education%2C_Youth_and_Sport_%28Cambodia%29.svg" alt="Khmer Academy Logo">
+            <div​ class="contitle"><p class="titlelogo">អនុវិទ្យាល័យ សាមគ្គី</p>
+                <p class="subtitlelogo" style="font-size: 12px;">លេខកូដសាលា៖​ ០២១១០៥០៣៧០២</p>
+            </div>
+        <input type="checkbox" id="nav_check" hidden>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">ទំព័រដើម</a></li>
+        <li><a href="#">អំពី</a></li>
+        <li><a href="#">វគ្គសិក្សា</a></li>
+        <li><a href="#">ទំនាក់ទំនង</a></li>
+            </ul>
+        </nav>
+        <label for="nav_check" class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </header>
+    
+  <main>
+    <section class="hero">
+      <h2 class="animate__animated animate__fadeInDown">អនុវិទ្យាល័យសាមគ្គី
+      </h2>
+      <p class="animate__animated animate__fadeInUp">សូមស្វាគមន៍មកកាន់បណ្ដាញព័ត៌មានអនឡាញរបស់សាលាអនុវិទ្យាល័យសាមគ្គី</p>
+      <div class="showorHide">
+        <address>ទីតាំងស្ថិតនៅ៖ ភូមិចំការចេក ឃុំស៊ុង ស្រុកសំឡូត ខេត្តបាត់ដំបង</address>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d880.994373222377!2d102.75531526951725!3d12.574213508170171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2skh!4v1718978379749!5m2!1sen!2skh" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <a href="#" class="cta animate__animated animate__fadeInUp" onclick="showorHide()">មើលទីតាំង</a>
+    </section>
+   
+    <section class="about">
+      <h2 class="animate__animated animate__fadeInLeft">អំពីសាលាអនុវិទ្យាល័យសាមគ្គី</h2>
+      <div class="about-content">
+        <div class="about-image animate__animated animate__fadeInRight">
+          <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjnT6F7Z3PKdfziY8QqvxCSwoN-lIVXpl7QkgNca5vSbZM_2YfJrvmjBDazwT1gGWLdKnLfQnTdjlN_cS3yzonTfAwtfMFNqPboPsIeCOUSfshWLG8xhY-fjE7JoF7eczQcPIiqQszwlk1CsLYRXk_ooGGBfntsyjNWUjVPlUx56xOUBtllxclVwDojhaQ/s1280/photo_14_2024-06-05_13-08-57.jpg" alt="Khmer Academy Campus">
+        </div>
+        <div class="about-text animate__animated animate__fadeInLeft">
+          <p>សាលារៀនរដ្ឋឥឡូវផ្លាស់ប្ដូរគ្រប់វិស័យ ដូចជាការធ្វើយ៉ាងណាឱ្យស្រុកសំឡូតមានភាពរីកចម្រើនខ្លាំង។ ឆ្នាំ២០២៤នេះទុរេនសំឡូតបានកើនទិន្នផលរហូតដល់១៧លានដុល្លាសហរដ្ឋអាមេរិក។</p>
+          <p>បន្ទប់សិក្សាពួកយើងមាន៩បន្ទប់ សិស្សសរុបមានចំនួន៣៩០នាក់ក្នុងឆ្នាំ២០២៤នេះ។</p>
+        </div>
+      </div>
+    </section>
+<h3 style="padding-left: 20px;">ព្រឹត្តិការណ៍ និងព័ត៌មាន</h3>
+<!-- news items -->
+<div class="news-container" id="news-container"></div>
+<div id="loading-text">សូមរង់ចាំបន្តិច...</div>
+<div id="popup" class="popup">
+  <div class="popup-content">
+    <span class="close-button">&times;</span>
+    <div class="popup-header">
+      <h2 id="popup-title"></h2>
+      <p id="popup-date-author">Date: <span id="popup-date"></span> | Author: <span id="popup-author"></span></p>
+    </div>
+    <div id="popup-content"></div>
+    <div id="popup-images"></div>
+  </div>
+</div>
+<!-- <h3 style="padding-left: 20px;">សកម្មភាពសិក្សា</h3> -->
+<section class="courses">
+  <h2 class="animate__animated animate__fadeInDown">សកម្មភាពសិក្សា</h2>
+  <div class="course-list">
+    <div class="course-card animate__animated animate__fadeInUp" onclick="showCourseDetails(0)">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ_5Qo9VcOWVp0BA0GhynQougAPh7bVafVWg&s" alt="Course 1">
+      <h3>វគ្គសិក្សា វិទ្យាសាស្រ្ដកុំព្យូទ័រ</h3>
+      <p>វគ្គនេះផ្ដល់ជូនអ្នកសិក្សាអំពីជំនាញយ៉ាងសកម្មដល់សាលា និងសហគមន៍សូមអរគុណ។</p>
+      <a href="#" class="course-link">Learn More</a>
+    </div>
+    <div class="course-card animate__animated animate__fadeInUp" onclick="showCourseDetails(1)">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:AND9GcSQ_5Qo9VcOWVp0BA0GhynQougAPh7bVafVWg&s" alt="Course 2">
+      <h3>វគ្គនឹងក្លាយជាសេដ្ឋី</h3>
+      <p>ធ្វើយ៉ាងណាឱ្យអ្នកក្លាយជាសេដ្ឋដូចក្ដីប្រាថ្នា និងមានបានយ៉ាងមានប្រសិទ្ធិភាពបំផុត។</p>
+      <a href="#" class="course-link">Learn More</a>
+    </div>
+    <div class="course-card animate__animated animate__fadeInUp" onclick="showCourseDetails(2)">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ_5Qo9VcOWVp0BA0GhynQougAPh7bVafVWg&s" alt="Course 3">
+      <h3>វគ្គភាសាបរទេស</h3>
+      <p>បន្ថែមឱ្យអ្នកមានជំនាញភាសាយ៉ាងខ្លាំង</p>
+      <a href="#" class="course-link">រៀនបន្ថែម</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- <script>
+  
+</script> -->
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Khmer Academy. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"></script>
+  <script src="script.js"></script>
+</body>
+</html>
